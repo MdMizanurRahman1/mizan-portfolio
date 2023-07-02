@@ -1,40 +1,94 @@
 import React, { useState } from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 import { RiHome2Line, RiUserLine, RiBriefcaseLine, RiCodeLine, RiMailLine } from 'react-icons/ri';
 import './NavBar.css';
 
 const NavBar = () => {
-    const [activeNav, setActiveNav] = useState('#')
+    const [activeNav, setActiveNav] = useState('#');
+
+    const handleSetActive = (nav) => {
+        setActiveNav(nav);
+    };
+
+    const scrollToTop = () => {
+        scroll.scrollToTop();
+    };
 
     return (
         <nav className="navbar md:w-auto">
             <ul className="navbar-nav">
                 <li className="nav-item">
-                    <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
+                    <Link
+                        to="home"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        activeClass="active"
+                        onSetActive={() => handleSetActive('#')}
+                        className={activeNav === '#' ? 'active' : ''}
+                    >
                         <RiHome2Line className="nav-icon" />
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#aboutMe" onClick={() => setActiveNav('#aboutMe')} className={activeNav === '#aboutMe' ? 'active' : ''} >
+                    <Link
+                        to="aboutMe"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        activeClass="active"
+                        onSetActive={() => handleSetActive('#aboutMe')}
+                        className={activeNav === '#aboutMe' ? 'active' : ''}
+                    >
                         <RiUserLine className="nav-icon" />
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#skills" onClick={() => setActiveNav('#skills')} className={activeNav === '#skills' ? 'active' : ''}  >
+                    <Link
+                        to="skills"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        activeClass="active"
+                        onSetActive={() => handleSetActive('#skills')}
+                        className={activeNav === '#skills' ? 'active' : ''}
+                    >
                         <RiBriefcaseLine className="nav-icon" />
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}  >
+                    <Link
+                        to="projects"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        activeClass="active"
+                        onSetActive={() => handleSetActive('#projects')}
+                        className={activeNav === '#projects' ? 'active' : ''}
+                    >
                         <RiCodeLine className="nav-icon" />
-                    </a>
+                    </Link>
                 </li>
                 <li className="nav-item">
-                    <a href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ''}  >
+                    <Link
+                        to="contact"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                        activeClass="active"
+                        onSetActive={() => handleSetActive('#contact')}
+                        className={activeNav === '#contact' ? 'active' : ''}
+                    >
                         <RiMailLine className="nav-icon" />
-                    </a>
+                    </Link>
                 </li>
             </ul>
-        </nav >
+        </nav>
     );
 };
 

@@ -3,6 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Fade } from 'react-awesome-reveal';
 import './About.css';
+import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
     const handleDownload = () => {
@@ -46,7 +47,7 @@ const About = () => {
                                 resume below to gain a better understanding of my skills and experience. Let's connect
                                 and bring your project to life together!
                             </p>
-                            <button onClick={handleDownload} className="btn bg-purple-700 btn-sm text-white font-bold">Download Resume</button>
+                            <button onClick={handleDownload} className="btn btn-error btn-sm font-bold"> <FaDownload /> Download Resume</button>
                         </div>
                     </Fade>
                 </div>
