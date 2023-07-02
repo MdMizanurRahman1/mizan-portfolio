@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
-import './Header.css'
+import { TypeAnimation } from 'react-type-animation';
+import './Header.css';
 
 const Header = () => {
     const [jobIndex, setJobIndex] = useState(0);
     const jobTitles = ['React Developer', 'MERN Stack Developer', 'Front-End Developer'];
+    const [animationKey, setAnimationKey] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setJobIndex((prevIndex) => (prevIndex + 1) % jobTitles.length);
-        }, 3000);
+            setAnimationKey((prevKey) => prevKey + 1);
+        }, 8000);
 
         return () => clearInterval(interval);
     }, []);
@@ -37,9 +40,15 @@ const Header = () => {
                     <span className="text-2xl">I am a </span>
                     <span
                         className="font-bold text-2xl text-red-400"
-                        style={{ transition: '0.5s', opacity: 0, animation: 'fadeIn 1s forwards' }}
+                        style={{ transition: '0.8s', opacity: 0, animation: 'fadeIn 1s forwards' }}
                     >
-                        {jobTitles[jobIndex]}
+                        <TypeAnimation
+                            cursor={{ hideWhenDone: true, blink: true }}
+                            sequence={jobTitles}
+                            wrapper="span"
+                            speed={10}
+                            repeat={Infinity}
+                        />
                     </span>
                 </h3>
                 <p className="my-6 md:my-10 text-justify">
@@ -65,11 +74,11 @@ const Header = () => {
             </div>
 
             <style>{`
-                @keyframes fadeIn {
-                    from { opacity: 0; }
-                    to { opacity: 1; }
-                }
-            `}</style>
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+      `}</style>
         </header>
     );
 };

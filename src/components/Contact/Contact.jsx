@@ -82,7 +82,7 @@ const Contact = () => {
                         </label>
                         <textarea id="message" name="message" className="textarea textarea-bordered w-full h-32 bg-slate-500 mt-2" required></textarea>
                     </div>
-                    <input type="submit" value="Send" className="btn btn-error btn-md w-1/2 hover:bg-red-500" />
+                    <input type="submit" value="Send" className="btn btn-error btn-md w-full hover:bg-red-500" />
                 </form>
             </div>
         </div>
