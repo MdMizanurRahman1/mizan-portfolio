@@ -22,7 +22,7 @@ const Header = () => {
     };
 
     return (
-        <header id='#' className="flex flex-col md:flex-row items-center mx-5 md:mx-30 py-8 md:py-10 lg:mx-auto lg:max-w-4xl">
+        <header id='home' className="flex flex-col md:flex-row items-center mx-5 md:mx-30 py-8 md:py-10 lg:mx-auto lg:max-w-4xl">
             <div className="md:mr-7  mb-6 md:mb-0 md:w-2/5 md:h-full">
                 <img
                     className="h-96 md:h-full md:w-full rounded-lg shadow-2xl"

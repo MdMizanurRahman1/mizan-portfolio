@@ -5,6 +5,15 @@ import { Fade } from 'react-awesome-reveal';
 import './About.css';
 
 const About = () => {
+    const handleDownload = () => {
+        const url = '/public/resume.pdf';
+        const anchor = document.createElement('a');
+        anchor.href = url;
+        anchor.download = 'resume.pdf';
+        anchor.click();
+    }
+
+
     useEffect(() => {
         AOS.init({
             duration: 1000,
@@ -28,16 +37,16 @@ const About = () => {
                     <Fade direction="left">
                         <div>
                             <h1 className="text-2xl font-bold">About me</h1>
-                            <h1 className="text-3xl font-bold">I am available for your Project</h1>
+                            <h1 className="text-3xl font-bold text-red-400">I am available for your Project</h1>
                             <p className="py-6 text-justify">
-                                Hello! I'm Rayhan Uddin Farhad, from Chittagong, Bangladesh. I am dedicated to learning
+                                Hello! I'm Md Mizanur Rahman, living in Finland. I am dedicated to learning
                                 and mastering new technologies, and coding has become my true passion. I invest a
                                 significant amount of time in staying up-to-date with the latest trends and honing my
                                 skills. If you have an exciting project in mind, I'm all ears! Feel free to explore my
                                 resume below to gain a better understanding of my skills and experience. Let's connect
                                 and bring your project to life together!
                             </p>
-                            <button className="btn btn-primary">Download Resume</button>
+                            <button onClick={handleDownload} className="btn bg-purple-700 btn-sm text-white font-bold">Download Resume</button>
                         </div>
                     </Fade>
                 </div>
