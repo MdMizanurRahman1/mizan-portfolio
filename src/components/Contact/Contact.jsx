@@ -6,6 +6,10 @@ import emailverification from "../../../68885-email.json";
 const Contact = () => {
     const form = useRef();
 
+    const resetForm = () => {
+        form.current.reset();
+    };
+
     const sendEmail = (e) => {
         e.preventDefault();
 
@@ -15,6 +19,12 @@ const Contact = () => {
             }, (error) => {
                 console.log(error.text);
             });
+
+        resetForm();
+    };
+
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:mizan389rahman@gmail.com';
     };
 
     return (
@@ -28,7 +38,7 @@ const Contact = () => {
                         </div>
                         <div className='mt-0 pt-0'>
                             <p className="text-center text-xl ">Send email to:</p>
-                            <p className="text-center text-lg">mizan389rahman@gmail.com</p>
+                            <a onClick={handleEmailClick} className="text-center text-lg text-blue-500 cursor-pointer">mizan389rahman@gmail.com</a>
                         </div>
                     </div>
                 </div>
@@ -58,12 +68,10 @@ const Contact = () => {
                         </label>
                         <textarea id="message" name="message" className="textarea textarea-bordered w-full h-32 bg-slate-500 mt-2" required></textarea>
                     </div>
-                    <input type="submit" value="Send" className="btn btn-error w-1/2" />
+                    <input type="submit" value="Send" className="btn btn-error w-1/2 hover:bg-red-500" />
                 </form>
             </div>
         </div>
-
-
     );
 };
 
