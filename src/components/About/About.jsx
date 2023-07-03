@@ -45,7 +45,7 @@ const About = () => {
                                 I'm Md Mizanur Rahman, currently residing in Finland. I'm passionate about coding and creating user-friendly web applications. With expertise in HTML, CSS, JavaScript, and React, I strive to develop great user experiences. I'm a quick learner, thrive in fast-paced environments, and have experience with tools like VS Code, Figma, Git & GitHub. I have strong communication skills, work well in teams, and meet project deadlines with attention to detail. Check out my projects, and let's connect for exciting opportunities!
                             </p>
                             {/* <button onClick={handleDownload} className="btn btn-error btn-sm font-bold"> <FaDownload /> Download Resume</button> */}
-                            <a href="/public/resume.pdf" download>
+                            <a href="./public/resume.pdf" download>
                                 <button
                                     type="submit"
                                     className=" btn btn-error btn-sm font-bold"
