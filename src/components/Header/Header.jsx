@@ -34,8 +34,8 @@ const Header = () => {
                 />
             </div>
             <div className="ml-0 md:pt-24 md:w-3/5">
-                <h4 className="text-2xl">Hello, I'm</h4>
-                <h2 className="text-3xl">Md Mizanur Rahman</h2>
+                <h4 className="text-2xl font-semibold">Hello, I'm</h4>
+                <h2 className="text-3xl font-semibold">Md Mizanur Rahman</h2>
                 <h3>
                     <span className="text-2xl">I am a </span>
                     <span
@@ -55,15 +55,15 @@ const Header = () => {
                     I have a strong set of technical skills, a problem-solving mindset, great teamwork abilities, a love for
                     learning, keen attention to detail, and a strong commitment to my work.
                 </p>
-                <h4 className="mt-4 mb-2 text-xl">FIND ME ON</h4>
+                <h4 className="mt-4 mb-3 text-xl font-semibold">FIND ME ON</h4>
                 <div className="flex items-center mt-2">
-                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
+                    <a href="https://www.facebook.com/profile.php?id=100007358370835" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
                         <FaFacebook size={25} />
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3 mx-2">
+                    <a href="https://www.linkedin.com/in/mizan-rahman-8ab2251a0/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3 mx-2">
                         <FaLinkedin size={25} />
                     </a>
-                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
+                    <a href="https://github.com/MdMizanurRahman1" target="_blank" rel="noopener noreferrer" className="text-white bg-purple-700 rounded-full p-3">
                         <FaGithub size={25} />
                     </a>
                 </div>

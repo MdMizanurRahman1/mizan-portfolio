@@ -3,6 +3,8 @@ import emailjs from '@emailjs/browser';
 import Lottie from "lottie-react";
 import emailverification from "../../../68885-email.json";
 import Swal from 'sweetalert2';
+import { AiFillMail } from 'react-icons/ai';
+
 
 const Contact = () => {
     const form = useRef();
@@ -41,7 +43,10 @@ const Contact = () => {
 
     return (
         <div id="contact" className="md:mx-24 rounded-lg pt-5 pb-8" style={{ background: 'linear-gradient(90deg, #bdc3c7, #2c3e50)' }}>
-            <h2 className="text-center text-2xl mb-4 mt-10">Get In Touch</h2>
+            <h2 className="text-center text-3xl mb-4 mt-10 font-bold">
+                <AiFillMail className="inline-block mr-2 text-red-400" />
+                Get In Touch
+            </h2>
             <div className="md:flex">
                 <div className="md:w-1/2">
                     <div className="flex flex-col items-center gap-0">
@@ -49,7 +54,7 @@ const Contact = () => {
                             <Lottie animationData={emailverification} loop={true} />
                         </div>
                         <div className="mt-0 pt-0">
-                            <p className="text-center text-xl">Send email to:</p>
+                            <p className="text-center text-xl font-semibold">Send email to:</p>
                             <a onClick={handleEmailClick} className="text-center text-lg text-blue-500 cursor-pointer">
                                 mizan389rahman@gmail.com
                             </a>
@@ -82,7 +87,9 @@ const Contact = () => {
                         </label>
                         <textarea id="message" name="message" className="textarea textarea-bordered w-full h-32 bg-slate-500 mt-2" required></textarea>
                     </div>
-                    <input type="submit" value="Send" className="btn btn-error btn-md w-full hover:bg-red-500" />
+                    <div className="send-container">
+                        <input type="submit" value="Send" className="btn btn-error btn-md hover:bg-red-500 w-full" />
+                    </div>
                 </form>
             </div>
         </div>

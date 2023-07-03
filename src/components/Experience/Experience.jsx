@@ -1,13 +1,16 @@
 import React from 'react';
-import './Experience.css';
 import { FaHtml5, FaCss3, FaReact, FaGithub, FaDatabase, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiBootstrap, SiJavascript, SiMongodb, SiFirebase } from 'react-icons/si';
 import Reveal from 'react-awesome-reveal';
+import { FaCode } from 'react-icons/fa';
 
 const Experience = () => {
     return (
         <div id='skills' className='my-20 md:mx-40'>
-            <h2 className="text-3xl text-center mt-24">Skills</h2>
+            <h2 className="text-3xl text-center mt-24 font-bold">
+                <FaCode className="inline-block mx-2 text-red-400" />
+                Skills
+            </h2>
             <div className="grid grid-cols-4 gap-7 mt-7">
                 <div className="flex flex-col items-center col-span-1">
                     <Reveal className="icon-reveal" direction="left" duration={500} cascade>

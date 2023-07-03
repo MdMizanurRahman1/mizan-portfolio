@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Fade } from 'react-awesome-reveal';
-import './About.css';
 import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
@@ -37,15 +36,10 @@ const About = () => {
                 <div className='md:w-3/5'>
                     <Fade direction="left">
                         <div>
-                            <h1 className="text-2xl font-bold">About me</h1>
+                            <h1 className="text-3xl font-bold">About me</h1>
                             <h1 className="text-3xl font-bold text-red-400">I am available for your Project</h1>
                             <p className="py-6 text-justify">
-                                Hello! I'm Md Mizanur Rahman, living in Finland. I am dedicated to learning
-                                and mastering new technologies, and coding has become my true passion. I invest a
-                                significant amount of time in staying up-to-date with the latest trends and honing my
-                                skills. If you have an exciting project in mind, I'm all ears! Feel free to explore my
-                                resume below to gain a better understanding of my skills and experience. Let's connect
-                                and bring your project to life together!
+                                I'm Md Mizanur Rahman, currently residing in Finland. I'm passionate about coding and creating user-friendly web applications. With expertise in HTML, CSS, JavaScript, and React, I strive to develop great user experiences. I'm a quick learner, thrive in fast-paced environments, and have experience with tools like VS Code, Figma, Git & GitHub. I have strong communication skills, work well in teams, and meet project deadlines with attention to detail. Check out my projects, and let's connect for exciting opportunities!
                             </p>
                             <button onClick={handleDownload} className="btn btn-error btn-sm font-bold"> <FaDownload /> Download Resume</button>
                         </div>
