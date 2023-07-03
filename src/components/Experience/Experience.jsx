@@ -1,6 +1,6 @@
 import React from 'react';
 import './Experience.css';
-import { FaHtml5, FaCss3, FaReact, FaGithub, FaDatabase } from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaReact, FaGithub, FaDatabase, FaNodeJs } from 'react-icons/fa';
 import { SiTailwindcss, SiBootstrap, SiJavascript, SiMongodb, SiFirebase } from 'react-icons/si';
 import Reveal from 'react-awesome-reveal';
 
@@ -87,6 +87,14 @@ const Experience = () => {
                     </Reveal>
                     <Reveal className="text-reveal" direction="right" duration={500} cascade>
                         <span className="mt-2">GitHub</span>
+                    </Reveal>
+                </div>
+                <div className="flex flex-col items-center col-span-1">
+                    <Reveal className="icon-reveal" direction="right" duration={500} cascade>
+                        <FaNodeJs className="text-green-500 text-5xl hover:scale-125 transform transition-transform duration-300" />
+                    </Reveal>
+                    <Reveal className="text-reveal" direction="right" duration={500} cascade>
+                        <span className="mt-2">Node.js</span>
                     </Reveal>
                 </div>
             </div>
