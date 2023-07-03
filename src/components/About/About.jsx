@@ -6,7 +6,7 @@ import { FaDownload } from 'react-icons/fa';
 
 const About = () => {
     const handleDownload = () => {
-        const url = '/public/resume.pdf';
+        const url = './public/resume.pdf';
         const anchor = document.createElement('a');
         anchor.href = url;
         anchor.download = 'resume.pdf';
