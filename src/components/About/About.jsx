@@ -3,20 +3,9 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Fade } from 'react-awesome-reveal';
 import { FaDownload } from 'react-icons/fa';
-import resume from "../../../public/resume.pdf"
+import resume from "../../../public/resume-mizan.pdf"
 
 const About = () => {
-    // const handleDownload = () => {
-    //     const url = './public/resume.pdf';
-    //     const anchor = document.createElement('a');
-    //     anchor.href = url;
-    //     anchor.download = 'resume.pdf';
-    //     anchor.click();
-    // }
-
-
-
-
 
     useEffect(() => {
         AOS.init({
@@ -45,7 +34,6 @@ const About = () => {
                             <p className="py-6 text-justify">
                                 I'm Md Mizanur Rahman, currently residing in Finland. I'm passionate about coding and creating user-friendly web applications. With expertise in HTML, CSS, JavaScript, and React, I strive to develop great user experiences. I'm a quick learner, thrive in fast-paced environments, and have experience with tools like VS Code, Figma, Git & GitHub. I have strong communication skills, work well in teams, and meet project deadlines with attention to detail. Check out my projects, and let's connect for exciting opportunities!
                             </p>
-                            {/* <button onClick={handleDownload} className="btn btn-error btn-sm font-bold"> <FaDownload /> Download Resume</button> */}
                             <a href={resume} download>
                                 <button
                                     type="submit"
