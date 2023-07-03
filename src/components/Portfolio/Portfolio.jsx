@@ -109,7 +109,7 @@ const Portfolio = () => {
                                 <AiOutlineKey className="inline-block mr-2" />
                                 Key Features:
                             </h1>
-                            <div className="pt-4">
+                            <div className="pt-4 text-justify">
                                 <p><span className="text-white font-bold mr-2">&#x25C7;</span>
                                     Student Enrollment: Students can sign in and join summer school camps by making payments through Stripe, making the enrollment process easy and smooth.
                                 </p>
@@ -124,7 +124,7 @@ const Portfolio = () => {
                                 <FaInfoCircle className="inline-block mr-2" />
                                 Details:
                             </h1>
-                            <p className="pt-2">
+                            <p className="pt-2 text-justify">
                                 This website is all about a Sports Academy and Summer Camp School. It mainly focuses on organizing summer tours and school classes.
 
                                 The website has an administrator who can easily manage user roles and class arrangements. Instructors are responsible for adding, updating, and deleting classes. However, the administrator has the authority to reject these classes if needed.
@@ -172,7 +172,7 @@ const Portfolio = () => {
                                     <AiOutlineKey className="inline-block mr-2" />
                                     Key Features:
                                 </h1>
-                                <div className="pt-4">
+                                <div className="pt-4 text-justify">
                                     <p><span className="text-white font-bold mr-2">&#x25C7;</span>
                                         Toys Collection: This website is mainly based on toy selling for kids.There will be different sections that displaying toys for kids.
                                     </p>
@@ -186,8 +186,8 @@ const Portfolio = () => {
                                     <FaInfoCircle className="inline-block mr-2" />
                                     Details:
                                 </h1>
-                                <p className="pt-2">
-                                    I made a Toy website where people can find lots of different educational toys. When users sign up and log in, they can do more things like adding, deleting, and changing their toy collection using CRUD actions.
+                                <p className="pt-2 text-justify">
+                                    I made a Toy website where people can find lots of different kind of toys. When users sign up and log in, they can do more things like adding, deleting, and changing their toy collection using CRUD actions.
 
                                     Users can search for specific toys easily and arrange them by name to find the best choices.
 
@@ -233,7 +233,7 @@ const Portfolio = () => {
                                     <AiOutlineKey className="inline-block mr-2" />
                                     Key Features:
                                 </h1>
-                                <div className="pt-4">
+                                <div className="pt-4 text-justify">
                                     <p><span className="text-white font-bold mr-2">&#x25C7;</span>
                                         Culinary Expert Selection: The website focuses on handpicking the top culinary experts, allowing users to discover talented chefs with exceptional skills.
                                     </p>
@@ -247,7 +247,7 @@ const Portfolio = () => {
                                     <FaInfoCircle className="inline-block mr-2" />
                                     Details:
                                 </h1>
-                                <p className="pt-2">
+                                <p className="pt-2 text-justify">
                                     This website helps users find top culinary experts. They can explore detailed profiles of chefs, including their background and recipes. The site has a disable button for administrators to control functions and an authentication system for secure access. It uses technologies like React.js, React Router DOM, Bootstrap, and Firebase to create a user-friendly experience, and making it a valuable addition to my portfolio.
                                 </p>
                                 <div className='justify-end card-actions'>
