@@ -3,7 +3,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Fade } from 'react-awesome-reveal';
 import { FaDownload } from 'react-icons/fa';
-import resume from "../../../public/resume-mizan.pdf"
+import resume from "../../../public/resume.1.pdf"
 
 const About = () => {
 
